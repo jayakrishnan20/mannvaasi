@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mannvaasi Solutions – AgriTech for a Sustainable Future</title>
+  <meta name="description" content="Mannvaasi Solutions builds Irrigation & Fertigation Automation, Crop Disease Detection, Direct Producer–Consumer Marketplaces, and Soil‑based Crop Recommendations." />
+  <meta name="theme-color" content="#14532d" />
+  <meta property="og:title" content="Mannvaasi Solutions – AgriTech for a Sustainable Future" />
+  <meta property="og:description" content="IoT + AI for farms: irrigation automation, disease detection, soil‑based crop recommendations, and direct producer–consumer marketing." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac', 400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d'
+            },
+            soil: {
+              300: '#C2A68B', 500: '#8B6C4E', 700: '#5B4632'
+            }
+          },
+          fontFamily: {
+            display: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 10px 30px -10px rgba(0,0,0,0.25)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Smooth scroll */
+    html{scroll-behavior:smooth}
+    /* Hide number input arrows */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button{ -webkit-appearance: none; margin: 0; }
+  </style>
+</head>
+<body class="antialiased text-slate-800 font-body">
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-900 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
+      <span>🌱 Mannvaasi Solutions – Tech for Farmers</span>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="flex items-center gap-2 group">          
+          <img src="logo.png" width="40">
+          <span class="font-semibold tracking-tight text-lg">Mannvaasi <span class="text-brand-700">Solutions</span></span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#products" class="hover:text-brand-700">Products</a>
+          <a href="#technology" class="hover:text-brand-700">Technology</a>
+          <a href="#impact" class="hover:text-brand-700">Impact</a>
+          <a href="#blog" class="hover:text-brand-700">Blog</a>
+          <a href="#contact" class="hover:text-brand-700">Contact</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg hover:bg-slate-100" aria-label="Open Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <div class="px-4 py-3 grid gap-2 text-sm">
+        <a href="#products" class="py-2">Products</a>
+        <a href="#technology" class="py-2">Technology</a>
+        <a href="#impact" class="py-2">Impact</a>
+        <a href="#blog" class="py-2">Blog</a>
+        <a href="#contact" class="py-2">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-brand-50 via-white to-brand-100"></div>
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="inline-flex items-center gap-2 rounded-full bg-brand-100 text-brand-800 px-3 py-1 text-xs font-medium">AgriTech • IoT • AI</span>
+        <h1 class="mt-4 text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">Empowering Farmers with <span class="text-brand-700">Smart Agriculture</span></h1>
+        <p class="mt-4 text-slate-700 text-lg leading-relaxed">Mannvaasi Solutions builds irrigation & fertigation automation, AI‑powered crop disease detection, direct producer–consumer marketplaces, and soil‑based crop recommendations.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#products" class="inline-flex items-center gap-2 rounded-2xl bg-brand-700 px-5 py-3 text-white hover:bg-brand-800 shadow-soft">Explore Products</a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-2xl border border-slate-300 px-5 py-3 hover:bg-slate-50">Talk to Us</a>
+        </div>
+        <dl class="mt-8 grid grid-cols-3 gap-4 text-center">
+          <div class="rounded-2xl bg-white p-4 shadow-soft">
+            <dt class="text-xs text-slate-500">Water Saved</dt>
+            <dd class="text-2xl font-semibold">30–40%</dd>
+          </div>
+          <div class="rounded-2xl bg-white p-4 shadow-soft">
+            <dt class="text-xs text-slate-500">Yield Increase</dt>
+            <dd class="text-2xl font-semibold">10–25%</dd>
+          </div>
+          <div class="rounded-2xl bg-white p-4 shadow-soft">
+            <dt class="text-xs text-slate-500">Faster Decisions</dt>
+            <dd class="text-2xl font-semibold">Real‑time</dd>
+          </div>
+        </dl>
+      </div>
+      <!-- Illustration -->
+      <div class="relative">
+        <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-soil-300 via-brand-200 to-white p-1 shadow-soft">
+          <div class="w-full h-full rounded-3xl bg-white p-6 grid grid-rows-3 gap-4">
+            <!-- row 1: irrigation -->
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 grid place-items-center">
+                <svg viewBox="0 0 24 24" class="w-7 h-7 text-brand-700" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12c4 0 7-4 9-4s5 4 9 4"/><path d="M4 16h16"/><path d="M6 20h12"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold">Irrigation & Fertigation</p>
+                <p class="text-xs text-slate-600">Automated valves, dosing, schedules</p>
+              </div>
+            </div>
+            <!-- row 2: disease detection -->
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 grid place-items-center">
+                <svg viewBox="0 0 24 24" class="w-7 h-7 text-brand-700" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="5"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold">Crop Disease Detection</p>
+                <p class="text-xs text-slate-600">AI camera + mobile alerts</p>
+              </div>
+            </div>
+            <!-- row 3: marketplace -->
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 grid place-items-center">
+                <svg viewBox="0 0 24 24" class="w-7 h-7 text-brand-700" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18M5 7l2 12h10l2-12M8 7a4 4 0 0 0 8 0"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold">Producer → Consumer</p>
+                <p class="text-xs text-slate-600">Direct sales via mobile apps</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="absolute -bottom-6 -left-6 rotate-6 opacity-15 text-[120px] font-black text-brand-700 select-none">MV</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products & Solutions -->
+  <section id="products" class="py-16 md:py-20 bg-gradient-to-b from-white to-brand-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Products & Solutions</h2>
+        <p class="mt-3 text-slate-600">Designed for Indian farms, scalable for agribusiness. Modular, affordable, and field‑tested.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <!-- Irrigation & Fertigation -->
+        <article class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-xl transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 grid place-items-center">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-brand-700" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12c4 0 7-4 9-4s5 4 9 4"/><path d="M4 16h16"/><path d="M6 20h12"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-lg">Irrigation & Fertigation Automation</h3>
+          <p class="mt-2 text-sm text-slate-600">Smart controllers, soil‑moisture sensors, dosing pumps, and weather‑aware schedules that save water and improve yields.</p>
+          <ul class="mt-3 text-sm list-disc list-inside text-slate-600 space-y-1">
+            <li>Valve control via mobile app</li>
+            <li>Fertilizer dosing automation</li>
+            <li>Weather & soil‑moisture driven</li>
+          </ul>
+          <a href="#contact" class="mt-4 inline-block text-brand-700 hover:text-brand-800 font-medium">Request a quote →</a>
+        </article>
+        <!-- Crop Disease Detection -->
+        <article class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-xl transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 grid place-items-center">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-brand-700" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="5"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-lg">AI Crop Disease Detection</h3>
+          <p class="mt-2 text-sm text-slate-600">Spot issues early with on‑device AI and camera input. Get instant recommendations and treatment guides.</p>
+          <ul class="mt-3 text-sm list-disc list-inside text-slate-600 space-y-1">
+            <li>Mobile & edge camera support</li>
+            <li>Offline inference options</li>
+            <li>Localized advisory content</li>
+          </ul>
+          <a href="#contact" class="mt-4 inline-block text-brand-700 hover:text-brand-800 font-medium">See a demo →</a>
+        </article>
+        <!-- Producer-Consumer Marketplace -->
+        <article class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-xl transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 grid place-items-center">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-brand-700" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18M5 7l2 12h10l2-12M8 7a4 4 0 0 0 8 0"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-lg">Direct Producer → Consumer</h3>
+          <p class="mt-2 text-sm text-slate-600">A mobile marketplace that connects farmers to households & businesses. Transparent pricing and logistics.</p>
+          <ul class="mt-3 text-sm list-disc list-inside text-slate-600 space-y-1">
+            <li>Inventory & order management</li>
+            <li>Digital payments & invoices</li>
+            <li>Delivery partner integrations</li>
+          </ul>
+          <a href="#contact" class="mt-4 inline-block text-brand-700 hover:text-brand-800 font-medium">Partner with us →</a>
+        </article>
+        <!-- Soil-based Recommendation -->
+        <article class="group rounded-3xl bg-white border border-slate-200 p-6 shadow-soft hover:shadow-xl transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 grid place-items-center">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-brand-700" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h18"/><path d="M5 16h14"/><path d="M7 20h10"/><path d="M4 10c4-4 12-4 16 0"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-lg">Soil‑based Crop Recommendations</h3>
+          <p class="mt-2 text-sm text-slate-600">Analyze soil tests and micro‑climate to suggest optimal crops, fertilizer plans, and sowing windows.</p>
+          <ul class="mt-3 text-sm list-disc list-inside text-slate-600 space-y-1">
+            <li>Upload lab reports or sensor data</li>
+            <li>Region & season aware models</li>
+            <li>Actionable advisory in local language</li>
+          </ul>
+          <a href="#contact" class="mt-4 inline-block text-brand-700 hover:text-brand-800 font-medium">Get recommendations →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology -->
+  <section id="technology" class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Technology that Works on the Field</h2>
+          <p class="mt-4 text-slate-600">We blend IoT hardware, cloud dashboards, and on‑device AI so farmers get insights even with low connectivity.</p>
+          <ul class="mt-6 space-y-3 text-slate-700">
+            <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-brand-200 inline-block"></span>Industrial‑grade controllers & sensors (IP65+)</li>
+            <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-brand-200 inline-block"></span>Edge inference for disease detection</li>
+            <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-brand-200 inline-block"></span>Cloud analytics & open APIs</li>
+            <li class="flex gap-3"><span class="mt-1 w-5 h-5 rounded-full bg-brand-200 inline-block"></span>Android & iOS farmer apps</li>
+          </ul>
+          <div class="mt-6 flex gap-3">
+            <a href="#contact" class="inline-flex items-center rounded-2xl bg-brand-700 px-5 py-3 text-white hover:bg-brand-800 shadow-soft">Schedule a walkthrough</a>
+            <a href="#blog" class="inline-flex items-center rounded-2xl border border-slate-300 px-5 py-3 hover:bg-slate-50">Read our blog</a>
+          </div>
+        </div>
+        <div class="rounded-3xl border border-slate-200 p-6 shadow-soft bg-white">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-2xl bg-brand-50 p-4">
+              <p class="text-sm font-semibold">IoT Stack</p>
+              <p class="text-xs text-slate-600 mt-1">LoRa / NB‑IoT / 4G, Modbus, BLE</p>
+            </div>
+            <div class="rounded-2xl bg-brand-50 p-4">
+              <p class="text-sm font-semibold">AI Models</p>
+              <p class="text-xs text-slate-600 mt-1">Vision models for leaf diseases</p>
+            </div>
+            <div class="rounded-2xl bg-brand-50 p-4">
+              <p class="text-sm font-semibold">Cloud</p>
+              <p class="text-xs text-slate-600 mt-1">Dashboards, alerts, analytics</p>
+            </div>
+            <div class="rounded-2xl bg-brand-50 p-4">
+              <p class="text-sm font-semibold">Apps</p>
+              <p class="text-xs text-slate-600 mt-1">Farmer & buyer mobile apps</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact & Case Studies -->
+  <section id="impact" class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Impact</h2>
+        <p class="mt-3 text-slate-600">Measurable outcomes from pilots and deployments.</p>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl bg-white p-6 border border-slate-200 shadow-soft">
+          <p class="text-4xl font-extrabold">35%</p>
+          <p class="text-sm text-slate-600">Average water saving with irrigation automation on drip systems.</p>
+        </div>
+        <div class="rounded-3xl bg-white p-6 border border-slate-200 shadow-soft">
+          <p class="text-4xl font-extrabold">18%</p>
+          <p class="text-sm text-slate-600">Yield increase when fertigation is tuned by soil moisture & EC.</p>
+        </div>
+        <div class="rounded-3xl bg-white p-6 border border-slate-200 shadow-soft">
+          <p class="text-4xl font-extrabold">↓ 2 weeks</p>
+          <p class="text-sm text-slate-600">Faster disease response time using AI alerts and advisories.</p>
+        </div>
+      </div>
+
+      <!-- Case Studies -->
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <article class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-semibold">Smart Irrigation for Vegetable Farm</h3>
+          <p class="mt-2 text-sm text-slate-600">Automated irrigation on 10 acres using soil moisture probes and valve control. Reduced water usage by 38%.</p>
+          <a href="#contact" class="mt-3 inline-block text-brand-700">Read more →</a>
+        </article>
+        <article class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+          <h3 class="font-semibold">AI Disease Detection in Tomato</h3>
+          <p class="mt-2 text-sm text-slate-600">On‑device detection of leaf blight with advisory in Tamil & English. Early treatment reduced crop loss.</p>
+          <a href="#contact" class="mt-3 inline-block text-brand-700">Read more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog / Knowledge Hub (static placeholders) -->
+  <section id="blog" class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-4">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Knowledge Hub</h2>
+          <p class="mt-3 text-slate-600">Best practices and updates from the field.</p>
+        </div>
+        <a href="#" class="hidden md:inline-flex items-center rounded-2xl border border-slate-300 px-4 py-2 hover:bg-slate-50">View all</a>
+      </div>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <article class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+          <p class="text-xs text-slate-500">Irrigation • 6 min read</p>
+          <h3 class="mt-2 font-semibold">How to plan fertigation schedules with soil moisture</h3>
+          <p class="mt-2 text-sm text-slate-600">Simple framework to set irrigation windows, dosing, and seasonal adjustments.</p>
+          <a href="#" class="mt-3 inline-block text-brand-700">Read →</a>
+        </article>
+        <article class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+          <p class="text-xs text-slate-500">AI • 5 min read</p>
+          <h3 class="mt-2 font-semibold">Detecting early leaf diseases on‑device</h3>
+          <p class="mt-2 text-sm text-slate-600">A quick primer on running vision models offline for farm reliability.</p>
+          <a href="#" class="mt-3 inline-block text-brand-700">Read →</a>
+        </article>
+        <article class="rounded-3xl bg-white border border-slate-200 p-6 shadow-soft">
+          <p class="text-xs text-slate-500">Marketplace • 4 min read</p>
+          <h3 class="mt-2 font-semibold">Direct farmer to consumer logistics</h3>
+          <p class="mt-2 text-sm text-slate-600">From order batching to cold‑chain—what matters for freshness & margins.</p>
+          <a href="#" class="mt-3 inline-block text-brand-700">Read →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section id="contact" class="py-16 md:py-20 bg-brand-900">
+    <div class="max-w-7xl mx-auto px-4 gap-10 items-center">
+      <div class="text-white">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-center">Let’s grow together</h2>
+        <p class="mt-3 text-brand-100 text-center">Request a demo, partnership, or a quote. We’ll get back within 1 business day.</p>
+        <div class="mt-6 space-y-3 text-brand-100/90 text-sm text-center">
+          <a href="https://wa.me/919876543210" target="_blank" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 px-6 py-3 rounded-full text-white font-semibold justify-center">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            Chat on WhatsApp
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-100">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2">
+          <img src="logo.png" width="24">
+          <span class="font-semibold">Mannvaasi Solutions</span>
+        </div>
+        <p class="mt-3 text-sm text-slate-300">Rooted in Soil. Powered by Water.</p>
+      </div>
+      <div>
+        <p class="font-semibold">Products</p>
+        <ul class="mt-3 space-y-2 text-sm text-slate-300">
+          <li><a href="#products" class="hover:text-white">Irrigation & Fertigation</a></li>
+          <li><a href="#products" class="hover:text-white">Crop Disease Detection</a></li>
+          <li><a href="#products" class="hover:text-white">Producer → Consumer</a></li>
+          <li><a href="#products" class="hover:text-white">Soil Recommendations</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold">Company</p>
+        <ul class="mt-3 space-y-2 text-sm text-slate-300">
+          <li><a href="#about" class="hover:text-white">About</a></li>
+          <li><a href="#blog" class="hover:text-white">Blog</a></li>
+          <li><a href="#contact" class="hover:text-white">Careers</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-400">
+        <p>© <span id="year"></span> Mannvaasi Solutions. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-slate-200">Privacy</a>
+          <a href="#" class="hover:text-slate-200">Terms</a>
+          <a href="#" class="hover:text-slate-200">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Utilities -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
